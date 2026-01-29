@@ -1,0 +1,18 @@
+# 图片文件夹
+
+请在此文件夹中添加以下图片：
+
+## 必需的图片
+
+1. hero-screenshot.png - 主页大图（1800x1200px）
+2. alipay-qrcode.png - 支付宝收款码（200x200px）
+3. wechat-qrcode.png - 微信收款码（200x200px）
+
+## screenshots 子文件夹
+
+创建 screenshots 文件夹并添加：
+- 1.png - 主界面截图
+- 2.png - 深色模式截图
+- 3.png - 搜索功能截图
+
+推荐尺寸：1200x800px
