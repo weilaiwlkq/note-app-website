@@ -200,8 +200,28 @@ body {
 
 .screenshot-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.screenshot-item {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.screenshot-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.screenshot-item img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .screenshot-placeholder {
@@ -688,6 +708,11 @@ footer {
     
     .feature-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .screenshot-gallery {
+        grid-template-columns: 1fr;
+        gap: 1rem;
     }
     
     .donation-methods {
